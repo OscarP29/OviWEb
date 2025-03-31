@@ -1,0 +1,142 @@
+body{
+   margin: 0;
+   background: rgb(59,130,246);
+background: linear-gradient(0deg, rgba(59,130,246,1) 0%, rgba(59,130,246,1) 24%, rgba(229,230,250,1) 77%, rgba(229,230,250,1) 100%);
+}
+.Contenedor {
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   grid-template-rows: repeat(12, auto);
+   grid-column-gap: 0px;
+   grid-row-gap: 0px;
+   }
+   
+   .Menu { grid-area: 1 / 1 / 2 / 13; }
+   .Banner { grid-area: 2 / 1 / 5 / 13; }
+   .Articulos { grid-area: 5 / 1 / 11 / 13;}
+   .Footer { grid-area: 11 / 1 / 13 / 13; }
+
+.Menu{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   background-color: white;
+   border-bottom: 1px solid #3B82F6;
+   position: fixed;
+   width: 100%;
+}
+.Menu li {
+   position: relative;
+ }
+.Menu a {
+   text-decoration: none;
+   padding: 10px 15px;
+   display: block;
+}
+.Menu-li:hover a{
+   background-color: #3B82F6;
+   color: white;
+}
+.Menu-submenu:hover .Menu-submenu-a {
+   background-color: #3B82F6;
+   color: white;
+}
+.Menu-submenu:hover .Menu-listamenu {
+   display: block;
+   
+}
+.Menu-listamenu {
+   display: none;
+   position: absolute;
+   top: 50%;
+   left: 0;
+   background-color: #1E3A8A;
+   list-style: none;
+   padding: 0;
+   min-width: 150px;
+ }
+ 
+.Menu-listamenu-li{
+   width: 100%;
+ }
+ 
+.Menu-listamenu-a {
+   padding: 10px;
+   display: block;
+   color: white;
+ }
+ 
+.Menu-listamenu-a:hover {
+   background-color: #3B82F6;
+   color: white;
+}
+
+.Banner { 
+   display: flex;
+   background-color: white;
+}
+    
+.Banner-Img{
+   width: 45vw;
+   height: 100vh;
+   object-fit: cover;
+}
+.Banner-Bienvenida{
+   width: 55vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.Banner-Bienvenida-h1{
+   font-size: 3.5rem;
+   color: #3919a4ce;
+   margin: 0 0 0 1rem;
+   font-weight: normal;
+}
+.Banner-Bienvenida-h2{
+   font-size: 4.5rem;
+   color: #3a19a4;
+   margin: 0 0 0 1rem;
+}
+.Banner-Bienvenida-p{
+   font-size: 1.2rem;
+   color: #5c5858;
+   margin: 0 0 0 1rem;
+   text-align: justify;
+   padding-right: 1rem;
+}
+.Articulos-seccion{
+   margin: 0 auto;
+   width: 70%;
+   background-color: yellow;
+   padding: 1rem;
+}
+.Articulos-seccion-info{
+   box-sizing: border-box;
+
+}
+.Articulos-seccion-info-div{
+   display: flex;
+   margin: 0 0 0.5rem 1rem;
+}
+.Articulos-seccion-info-img{
+   margin: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.Articulos-seccion-info-figureImg{
+   margin: 0;
+   flex: 1;
+   height: auto;
+}
+.Articulos-seccion-info-p{
+   margin: 0;
+   flex: 2;
+   text-align: justify;
+   margin: 0 1rem;
+
+
+}

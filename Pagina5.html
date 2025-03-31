@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Css/StylesPaginas.css">
+
+        <title>Base de datos</title>
+    </head>
+    <body>
+        <div class="Menu"> 
+            <li class="Menu-li"><a href="index.html">Inicio</a></li>
+            <li class="Menu-submenu">
+            <a class="Menu-submenu-a" href="#">Lecturas</a>
+            <ul class="Menu-listamenu">
+                <li class="Menu-listamenu-li"><a class="Menu-listamenu-a" href="Pagina1.html">¿Que es una Base de Datos?</a></li>
+                <li class="Menu-listamenu-li"><a class="Menu-listamenu-a" href="Pagina2.html">Características de una Base de Datos</a></li>
+                <li class="Menu-listamenu-li"><a class="Menu-listamenu-a" href="Pagina3.html">Diferencias entre base de datos y hojas de calculo</a></li>
+                <li class="Menu-listamenu-li"><a class="Menu-listamenu-a" href="Pagina4.html">¿Que es SQL?</a></li>
+                <li class="Menu-listamenu-li"><a class="Menu-listamenu-a" href="Pagina5.html">Comandos principales de SQL</a></li>
+            </ul>
+            </li>
+            <li class="Menu-li"><a href="PaginaMultimedia.html">Multimedia</a></li>
+            <li class="Menu-li"><a href="PaginaActividades.html">Actividades</a></li>
+            <li class="Menu-li"><a href="PaginaAutor.html">Autor</a></li>
+        </div>
+        <div class="Contenedor">
+
+            <div class="Contenedor-info">
+
+                <img class="Contenedor-info-figure-img"
+                    src="Img/Sql.jpg" alt="Fuente: soyundba">
+
+                <div class="Contenedor-info-info">
+                    <h2 class="Contenedor-info-info-h2">Comandos Principales de
+                        SQL</h2>
+                    <p class="Contenedor-info-info-p">
+                        SQL se compone de diversas instrucciones que permiten
+                        gestionar los datos en una base de datos. Algunos de los
+                        comandos más utilizados son:<br>
+                        <h3 class="Contenedor-info-info-p-h3">SELECT: Recupera
+                            datos de una o varias tablas.</h3>
+                        <p class="Contenedor-info-info-p-codigo">SELECT * FROM
+                            clientes;</p>
+                        <h3 class="Contenedor-info-info-p-h3">INSERT: Agrega
+                            nuevos registros a una tabla.</h3>
+                        <p class="Contenedor-info-info-p-codigo">INSERT INTO
+                            clientes (nombre, edad) VALUES ('Juan',
+                            30);</p>
+                        <h3 class="Contenedor-info-info-p-h3">UPDATE: Modifica
+                            registros existentes en una
+                            tabla.</h3>
+                        <p class="Contenedor-info-info-p-codigo">UPDATE clientes
+                            SET edad = 31 WHERE nombre =
+                            'Juan';</p>
+                        <h3 class="Contenedor-info-info-p-h3">DELETE: Elimina
+                            registros de una tabla.</h3>
+                        <p class="Contenedor-info-info-p-codigo">DELETE FROM
+                            clientes WHERE nombre = 'Juan';</p>
+                        <h3 class="Contenedor-info-info-p-h3">CREATE TABLE: Crea
+                            una nueva tabla en la base de
+                            datos.</h3>
+                        <p class="Contenedor-info-info-p-codigo">CREATE TABLE
+                            clientes (
+                            id INT PRIMARY KEY,
+                            nombre VARCHAR(50),
+                            edad INT
+                            );</p>
+                        <h3 class="Contenedor-info-info-p-h3">DROP TABLE:
+                            Elimina una tabla completa de la base de
+                            datos.</h3>
+                        <p class="Contenedor-info-info-p-codigo">DROP TABLE
+                            clientes;</p>
+
+                    </p>
+
+                </div>
+                <div class="Contenedor-info-info-referencias">
+                    <a class="Contenedor-info-info-referencia-anterior"
+                        href="Pagina4.html">⏮</a>
+                    <span
+                        class="Contenedor-info-info-referencias-citas-p">📚
+                        <div
+                            class="Contenedor-info-info-referencias-citas-p-div">
+                            <p
+                                class="Contenedor-info-info-referencias-citas-div-p">Figure
+                                1.
+                                Freepik. (s.f.). Ilustración de SQL y tecnología
+                                abstracta [Imagen]. Freepik.
+                                https://www.freepik.es/vector-gratis/ilustracion-sql-tecnologia-abstracta_21743443.htm</p>
+                            <p
+                                class="Contenedor-info-info-referencias-citas-div-p">GeoTalleres.
+                                (s.f.). Conceptos básicos de SQL. Read the Docs.
+                                https://geotalleres.readthedocs.io/es/latest/conceptos-sql/conceptos_sql.html</p>
+                            <p
+                                class="Contenedor-info-info-referencias-citas-div-p">4D.
+                                (s.f.). Comandos SQL. 4D Documentation.
+                                https://doc.4d.com/4Dv19/4D/19/Comandos-SQL.300-5434537.es.html</p>
+                        </div>
+
+                    </span>
+
+                    <a class="Contenedor-info-info-referencia-siguiente"
+                        href>⏭</a>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

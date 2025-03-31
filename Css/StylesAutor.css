@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+}
+.Menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid #3B82F6;
+    position: fixed;
+    width: 100%;
+ }
+ .Menu li {
+    position: relative;
+  }
+ .Menu a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+ }
+ .Menu-li:hover a{
+    background-color: #3B82F6;
+    color: white;
+ }
+ .Menu-submenu:hover .Menu-submenu-a {
+    background-color: #3B82F6;
+    color: white;
+
+ }
+ .Menu-submenu:hover .Menu-listamenu {
+    display: block;
+    
+    
+ }
+ .Menu-listamenu {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: #1E3A8A;
+    list-style: none;
+    padding: 0;
+    min-width: 150px;
+    z-index: 100;
+  }
+  
+ .Menu-listamenu-li{
+    width: 100%;
+  }
+  
+ .Menu-listamenu-a {
+    padding: 10px;
+    display: block;
+    color: white;
+  }
+  
+ .Menu-listamenu-a:hover {
+    background-color: #3B82F6;
+    color: white;
+ }
+
+.Contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+.Contenedor-titulo{
+    color: #1E3A8A;
+    font-size: 3rem;
+    text-align: center;
+}
+.Contenedor-info{
+    display: flex;
+    width: 60%;
+    height: 70%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+.Contenedor-info-autor{
+    width: 30%;
+    height: auto;
+    padding: 1rem;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+.Contenedor-info-autor-img{
+    width: 100%;
+    height: 65%;
+}
+.Contenedor-info-autor-h2{
+    margin: 0.5rem 0;
+    text-decoration: underline;
+    font-weight: normal;
+}
+.Contenedor-info-autor-p{
+    font-size: 0.8rem;
+    margin: 0.8rem 0;
+}
+.Contenedor-info-autor-a{
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: white;
+    background-color: #1E3A8A;
+    padding: 0.5rem 0.8rem;
+    box-sizing: border-box;
+    
+}
+.Contenedor-info-referencias{
+    width: 60%;
+    background-color: #1E3A8A;
+    padding: 1rem;
+    overflow: auto;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: white;
+}
+
+.Contenedor-info-referencias::-webkit-scrollbar{
+    display: none;
+}
+.Contenedor-info-referencias-h2{
+    margin-top: 0;
+}
